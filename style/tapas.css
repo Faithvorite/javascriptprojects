@@ -1,0 +1,235 @@
+html {
+  padding-top: 50px;
+    box-sizing: border-box;
+    background: url("../oh-la-la.jpeg") center no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  svg {
+    fill: white;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 50%;
+    width: 200px;
+    margin-bottom: 50px;
+  }
+  
+  .wrapper {
+    align-items: center;
+    max-width: 350px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    margin: 0;
+    font-weight: 200;
+  }
+  
+  .plates {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    list-style: none;
+  }
+  
+  .plates li {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 10px 0;
+    font-weight: 100;
+    display: flex;
+  }
+  
+  .plates label {
+    flex: 1;
+    cursor: pointer;
+  }
+  
+  .plates input {
+    display: none;
+  }
+  
+  .plates input + label:before {
+    content: "⬜️";
+    margin-right: 10px;
+  }
+  
+  .plates input:checked + label:before {
+    content: "🌮";
+  }
+  
+  .add-items {
+    margin-top: 20px;
+  }
+  
+  .add-items input {
+    padding: 10px;
+    outline: 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+ /* NAV BAR  */
+ .site-wrap {
+  margin: 70px auto;
+  background: white;
+  padding: 40px;
+  text-align: justify;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
+  transform: scale(0.98);
+  transition: transform 0.5s;
+}
+body.fixed-nav .site-wrap {
+  transform: scale(1);
+}
+nav li :hover {
+  font-weight: bolder;
+}
+header {
+  text-align: center;
+  height: 50vh;
+  background: url(https://source.unsplash.com/GKN6rpDr0EI/960x640) bottom center no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  color: white;
+  font-size: 7vw;
+  text-shadow: 3px 4px 0 rgba(0,0,0,0.2);
+}
+
+nav {
+  background: black;
+  top: 0;
+  left: 0;
+  width:100vw;
+  transition:all 0.5s;
+  position: absolute;
+  z-index: 1;
+}
+
+body.fixed-nav nav {
+  position: fixed;
+  box-shadow: 0 5px 0 rgba(0,0,0,0.1);
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+nav li {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fixed-nav li.logo {
+  max-width: 500px;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
+  color: white;
+  transition: all 0.2s;
+  text-transform: uppercase;
+}
+  /* *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+
+  
+  body.fixed-nav .site-wrap {
+    transform: scale(1);
+  }
+  
+  header {
+    text-align: center;
+    height: 50vh;
+    background: url(https://source.unsplash.com/GKN6rpDr0EI/960x640) bottom center no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  h1 {
+    color: white;
+    font-size: 7vw;
+    text-shadow: 3px 4px 0 rgba(0,0,0,0.2);
+  }
+  
+  nav {
+    background: black;
+    top: 0;
+    width: 100vw;
+    transition:all 0.5s;
+    position: relative;
+    z-index: 1;
+  }
+  
+  body.fixed-nav nav {
+    position: fixed;
+    box-shadow: 0 5px 0 rgba(0,0,0,0.1);
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+  }
+  
+  nav li {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  li.logo {
+    max-width: 0;
+    overflow: hidden;
+    background: white;
+    transition: all 0.5s;
+    font-weight: 600;
+    font-size: 30px;
+  }
+  
+  li.logo a {
+    color: black;
+  }
+  
+  .fixed-nav li.logo {
+    max-width: 500px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    padding: 20px;
+    display: inline-block;
+    color: white;
+    transition: all 0.2s;
+    text-transform: uppercase;
+  } */
